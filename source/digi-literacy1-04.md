@@ -21,7 +21,7 @@ Duration: 3
 
 ### 프로젝트 워크플로
 
-[![4강 워크플로 다이어그램](img/workflow-diagram.svg)](https://excalidraw.com/#json=VcSeY8cVY4Gl_rMzRis4W,AyJABRs4Pw6mhMgRXxGwdg)
+[![4강 워크플로 다이어그램](img/workflow.png)](https://excalidraw.com/#json=VcSeY8cVY4Gl_rMzRis4W,AyJABRs4Pw6mhMgRXxGwdg)
 
 ## 실습 환경 세팅
 Duration: 5
