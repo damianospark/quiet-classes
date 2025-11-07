@@ -103,7 +103,23 @@ git commit -m "feat: new-codelab 추가"
 git push origin main
 ```
 
-### 5. Google Docs 기반 작성 (선택)
+### 5. 자동화 스크립트
+
+`scripts/` 디렉터리에 다음 유틸리티가 포함되어 있습니다.
+
+- `export_codelabs.sh`: `source/*.md`를 claat로 변환해 `docs/`에 반영합니다. 필요 시 `CLAAT_BIN` 환경 변수로 claat 경로를 재정의하세요.
+- `publish_changes.sh`: 변경 사항을 `git add` 한 뒤 커밋 메시지를 입력받아 커밋·푸시합니다.
+- `export_and_publish.sh`: 위 두 스크립트를 순차 실행합니다.
+
+```bash
+# 변환만 수행
+scripts/export_codelabs.sh
+
+# 변환 후 커밋/푸시까지 한 번에
+scripts/export_and_publish.sh
+```
+
+### 6. Google Docs 기반 작성 (선택)
 
 Google Docs로 작성 후 공유 링크를 사용해 변환할 수도 있습니다:
 
