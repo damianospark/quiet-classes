@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>디지털 리터러시 1-05 | Google Codelab 샘플</title>
+    <script type="module" src="https://codelab-elements.appspot.com/components/codelab-elements/codelab-elements.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700" />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Google Sans", "Roboto", sans-serif;
+        background: #f8f9fa;
+      }
+
+      header.hero {
+        padding: 40px 24px;
+        background: linear-gradient(140deg, #0b8043, #34a853);
+        color: #fff;
+        text-align: center;
+      }
+
+      header.hero h1 {
+        margin: 0 0 16px;
+        font-size: 2.4rem;
+      }
+
+      header.hero p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 24px;
+        color: #5f6368;
+      }
+
+      codelab-step::part(header) {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      codelab-step::part(content) {
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>디지털 리터러시 1-05</h1>
+      <p>온라인 협업과 커뮤니케이션 역량 강화를 위한 Codelab 샘플입니다.</p>
+    </header>
+    <main>
+      <google-codelab
+        id="digi-literacy1-05"
+        title="디지털 리터러시 1-05"
+        environment="web"
+        feedback-link="https://github.com/damianospark/quiet-classes/issues/new"
+      >
+        <codelab-step label="세션 개요" duration="3">
+          <p>
+            이 세션은 온라인 협업 도구를 활용해 효율적인 커뮤니케이션을 실습하는 과정입니다.
+            참가자는 실시간 공동 작업과 기록 관리 방법을 익힙니다.
+          </p>
+          <ul>
+            <li>온라인 협업 도구(예: Google Workspace) 소개</li>
+            <li>소통 규칙과 역할 분담 안내</li>
+            <li>실습 미션 개요 공유</li>
+          </ul>
+        </codelab-step>
+
+        <codelab-step label="협업 환경 세팅" duration="6">
+          <p>다음 순서를 따라 실습 환경을 준비합니다.</p>
+          <h3>1. 공유 드라이브 생성</h3>
+          <p>Google Drive에서 협업용 폴더를 만들고 구성원에게 편집 권한을 부여합니다.</p>
+          <h3>2. 공용 문서 템플릿 복사</h3>
+          <p>아래 템플릿을 복사해 조별 기록지로 활용합니다.</p>
+          <pre><code>https://docs.google.com/document/d/샘플템플릿ID</code></pre>
+          <h3>3. 커뮤니케이션 채널 선정</h3>
+          <p>Google Chat 또는 Slack 채널을 개설하고 공지사항 메시지를 작성합니다.</p>
+        </codelab-step>
+
+        <codelab-step label="실시간 협업 실습" duration="10">
+          <p>조별로 협업 미션을 수행하며 다음 조건을 충족합니다.</p>
+          <ol>
+            <li>회의 기록 문서에 회의 목적과 참여자 역할을 정리합니다.</li>
+            <li>실시간 편집 기능을 통해 회의 중 결정 사항을 업데이트합니다.</li>
+            <li>채팅 채널에 회의 요약과 후속 액션 아이템을 공유합니다.</li>
+          </ol>
+          <aside class="success">
+            <p>
+              <strong>Tip:</strong> 회의 도중 태그 기능(@)을 활용하면 담당자에게 빠르게 알릴 수 있습니다.
+            </p>
+          </aside>
+        </codelab-step>
+
+        <codelab-step label="회고 및 다음 단계" duration="4">
+          <p>세션을 마무리하면서 다음 내용을 점검합니다.</p>
+          <ul>
+            <li>협업 과정의 어려움과 해결 방안을 회고합니다.</li>
+            <li>공유 드라이브의 파일 구조와 접근 권한을 정돈합니다.</li>
+            <li>다음 세션까지 수행할 협업 프로젝트 과제를 안내합니다.</li>
+          </ul>
+          <p>
+            실습 결과물을 저장소에 정리하고, 필요 시 Codelab 콘텐츠를 업데이트하여 학습자에게 공유하세요.
+          </p>
+        </codelab-step>
+      </google-codelab>
+    </main>
+    <footer>
+      &copy; <span id="footer-year"></span> damianospark. 모든 권리 보유.
+    </footer>
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

@@ -14,8 +14,11 @@ Google Codelab 형태의 강의 자료를 제공하기 위한 샘플을 포함�
 
 ### 2. Codelab 샘플 확인
 
-- 샘플 강의 경로: `https://damianospark.github.io/quiet-classes/digi-literacy1-04/`
+- 샘플 강의 경로
+  - `https://damianospark.github.io/quiet-classes/digi-literacy1-04/`
+  - `https://damianospark.github.io/quiet-classes/digi-literacy1-05/`
 - 로컬에서 확인하려면 `docs/digi-literacy1-04/index.html` 파일을 브라우저로 열면 됩니다.
+- 동일하게 `docs/digi-literacy1-05/index.html` 로컬 파일을 열어 미리보기할 수 있습니다.
 
 ### 3. 새 수업 추가 방법
 
