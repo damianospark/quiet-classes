@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>quiet-classes | 강의 목록</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Google Sans", "Roboto", sans-serif;
+        background: #f8f9fa;
+        color: #202124;
+      }
+
+      header {
+        padding: 48px 24px;
+        text-align: center;
+        background: linear-gradient(135deg, #1a73e8, #52d1ff);
+        color: #fff;
+      }
+
+      header h1 {
+        margin: 0 0 12px;
+        font-size: 2.6rem;
+      }
+
+      header p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 24px 48px;
+      }
+
+      section {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 12px 32px rgba(26, 115, 232, 0.08);
+        padding: 32px;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li + li {
+        margin-top: 20px;
+        border-top: 1px solid #e0e3eb;
+        padding-top: 20px;
+      }
+
+      a.course-link {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a.course-link span.title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      a.course-link span.meta {
+        font-size: 0.95rem;
+        color: #5f6368;
+      }
+
+      footer {
+        text-align: center;
+        padding: 24px;
+        color: #5f6368;
+      }
+
+      @media (max-width: 680px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        section {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>quiet-classes</h1>
+      <p>디지털 리터러시 교육을 위한 Google Codelab 강의 모음</p>
+    </header>
+    <main>
+      <section>
+        <h2>강의 목록</h2>
+        <ul>
+          <li>
+            <a class="course-link" href="./digi-literacy1-04/">
+              <span class="title">디지털 리터러시 1-04</span>
+              <span class="meta">정보 검증과 비판적 사고 훈련을 위한 실습 기반 Codelab</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="footer-year"></span> damianospark. 모든 권리 보유.
+    </footer>
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

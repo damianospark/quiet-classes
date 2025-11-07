@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>디지털 리터러시 1-04 | Google Codelab 샘플</title>
+    <script type="module" src="https://codelab-elements.appspot.com/components/codelab-elements/codelab-elements.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700" />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Google Sans", "Roboto", sans-serif;
+        background: #f8f9fa;
+      }
+
+      header.hero {
+        padding: 40px 24px;
+        background: linear-gradient(135deg, #1a73e8, #52d1ff);
+        color: #fff;
+        text-align: center;
+      }
+
+      header.hero h1 {
+        margin: 0 0 16px;
+        font-size: 2.4rem;
+      }
+
+      header.hero p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 24px;
+        color: #5f6368;
+      }
+
+      codelab-step::part(header) {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      codelab-step::part(content) {
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>디지털 리터러시 1-04</h1>
+      <p>구글 Codelab 포맷으로 구성한 수업 샘플 페이지입니다.</p>
+    </header>
+    <main>
+      <google-codelab
+        id="digi-literacy1-04"
+        title="디지털 리터러시 1-04"
+        environment="web"
+        feedback-link="https://github.com/damianospark/quiet-classes/issues/new"
+      >
+        <codelab-step label="소개" duration="3">
+          <p>
+            이 Codelab은 디지털 리터러시 강의의 1-04 세션을 소개하는 샘플 콘텐츠입니다.
+            실제 강의 자료를 적용하기 전에 구조와 레이아웃을 확인하는 데 활용하세요.
+          </p>
+          <ul>
+            <li>강의 목표 및 학습 포인트 개요</li>
+            <li>실습 환경 및 준비물 안내</li>
+            <li>필요 시 참고 링크 제공</li>
+          </ul>
+        </codelab-step>
+
+        <codelab-step label="학습 목표" duration="5">
+          <p>이번 세션을 통해 다음 내용을 이해합니다.</p>
+          <ol>
+            <li>디지털 환경에서 필요한 핵심 정보 이해 능력</li>
+            <li>온라인 자료의 신뢰성을 평가하는 방법</li>
+            <li>비판적 사고를 활용한 정보 해석과 공유</li>
+          </ol>
+          <aside class="special">
+            <p>
+              <strong>Tip:</strong> 학습자의 수준에 따라 배경 지식을 보충할 수 있는 사전 읽기 자료를
+              첨부하세요.
+            </p>
+          </aside>
+        </codelab-step>
+
+        <codelab-step label="실습: 정보 검증하기" duration="10">
+          <p>다음 순서에 따라 실습을 진행합니다.</p>
+          <h3>1. 사례 분석</h3>
+          <p>
+            지정된 뉴스 기사 또는 소셜 미디어 게시물을 검토하면서 핵심 주장과 증거를 정리합니다.
+            각 학습자는 최소 한 가지 사실 확인 과정(출처 확인, 데이터 비교 등)을 수행하세요.
+          </p>
+          <h3>2. 검증 도구 활용</h3>
+          <p>
+            크롬 브라우저의 팩트체크 익스텐션 또는 구글 Fact Check Explorer 도구를 활용해 정보를 검증합니다.
+          </p>
+          <pre><code>https://toolbox.google.com/factcheck/explorer
+https://newslit.org/tools/</code></pre>
+          <h3>3. 토의 및 공유</h3>
+          <p>조별로 검증 결과를 공유하고, 신뢰할 수 있는 정보와 그렇지 않은 정보의 특징을 정리합니다.</p>
+        </codelab-step>
+
+        <codelab-step label="정리 및 과제" duration="3">
+          <p>세션을 마무리하며 아래 항목을 진행합니다.</p>
+          <ul>
+            <li>핵심 개념 복습 퀴즈(예: Kahoot!)</li>
+            <li>학습 중 떠오른 질문 및 의견 공유</li>
+            <li>다음 시간까지 수행할 정보 분류 과제 안내</li>
+          </ul>
+          <p>
+            강의 자료를 Markdown 혹은 Google Docs로 정리한 뒤, Codelab 포맷에 맞게 변환하여 저장소에 반영하세요.
+          </p>
+        </codelab-step>
+      </google-codelab>
+    </main>
+    <footer>
+      &copy; <span id="footer-year"></span> damianospark. 모든 권리 보유.
+    </footer>
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
