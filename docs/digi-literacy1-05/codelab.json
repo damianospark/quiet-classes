@@ -1,0 +1,28 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2025-11-07T20:23:53+09:00",
+  "id": "digi-literacy1-05",
+  "duration": 103,
+  "title": "5강 | Canva + Gemini + ChatGPT로 AI 포트폴리오 완성",
+  "authors": "quiet-classes",
+  "summary": "5강 - Canva·Gemini·ChatGPT로 AI 포트폴리오 완성",
+  "source": "source/digi-literacy1-05.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "digital-literacy"
+  ],
+  "tags": [
+    "canva",
+    "chatgpt",
+    "gemini",
+    "portfolio"
+  ],
+  "feedback": "https://github.com/damianospark/quiet-classes/issues/new",
+  "url": "digi-literacy1-05"
+}

@@ -1,29 +1,122 @@
 # quiet-classes
 
-## Google Codelab 샘플 배포 안내
+## Google Codelab 강의 자료 제작 및 배포 가이드
 
 이 저장소는 GitHub Pages를 통해 `https://damianospark.github.io/quiet-classes/` 하위 경로에서
-Google Codelab 형태의 강의 자료를 제공하기 위한 샘플을 포함합니다.
+Google Codelab 형태의 강의 자료를 제공합니다.
 
-### 1. GitHub Pages 활성화
+### 1. 강의 자료 작성 방식 (claat 활용)
 
-1. 저장소 Settings → Pages 로 이동합니다.
-2. **Source** 를 `Deploy from a branch` 로 설정합니다.
-3. **Branch** 를 `main` / `docs` 로 선택하고 저장합니다.
-4. 설정 후 약간의 시간이 지나면 `https://damianospark.github.io/quiet-classes/` 로 접근할 수 있습니다.
+이 프로젝트는 **claat (Codelabs as a Thing)** 도구를 사용해 Markdown 또는 Google Docs로 작성한 콘텐츠를
+Google Codelab HTML로 자동 변환합니다.
 
-### 2. Codelab 샘플 확인
+#### 1-1. claat 도구 설치
 
-- 샘플 강의 경로
-  - `https://damianospark.github.io/quiet-classes/digi-literacy1-04/`
-  - `https://damianospark.github.io/quiet-classes/digi-literacy1-05/`
-- 로컬에서 확인하려면 `docs/digi-literacy1-04/index.html` 파일을 브라우저로 열면 됩니다.
-- 동일하게 `docs/digi-literacy1-05/index.html` 로컬 파일을 열어 미리보기할 수 있습니다.
+```bash
+# macOS (darwin-amd64)
+curl -L https://github.com/googlecodelabs/tools/releases/latest/download/claat-darwin-amd64 -o claat
+chmod +x claat
 
-### 3. 새 수업 추가 방법
+# Linux
+curl -L https://github.com/googlecodelabs/tools/releases/latest/download/claat-linux-amd64 -o claat
+chmod +x claat
 
-1. `docs/<새 강의 경로>/index.html` 파일을 생성하고, Google Codelab 컴포넌트를 활용해 콘텐츠를 작성합니다.
-2. 변경 사항을 커밋하고 `main` 브랜치에 푸시합니다.
-3. GitHub Pages가 자동으로 새 콘텐츠를 반영합니다.
+# 버전 확인
+./claat version
+```
 
-강의 자료는 한국어 리소스를 기준으로 작성하며, 향후 i18n 스크립트와 함께 다국어 관리가 가능하도록 확장할 예정입니다.
+#### 1-2. Markdown으로 Codelab 작성
+
+`source/` 폴더에 Markdown 파일을 작성합니다. 파일 상단에 메타데이터를 포함해야 합니다:
+
+```markdown
+summary: 강의 요약
+id: codelab-id
+categories: digital-literacy
+tags: notion, google-workspace
+status: Published
+authors: quiet-classes
+Feedback Link: https://github.com/damianospark/quiet-classes/issues/new
+
+# 강의 제목
+
+## 1. 첫 번째 단계
+Duration: 5
+
+단계 내용...
+
+## 2. 두 번째 단계
+Duration: 10
+
+단계 내용...
+```
+
+#### 1-3. Markdown을 Codelab HTML로 변환
+
+```bash
+# Markdown 파일을 Codelab HTML로 변환
+./claat export source/your-codelab.md
+
+# 생성된 폴더를 docs로 이동
+mv your-codelab docs/
+```
+
+### 2. GitHub Pages 배포
+
+#### 2-1. GitHub Pages 활성화
+
+1. 저장소 Settings → Pages로 이동
+2. **Source**를 `Deploy from a branch`로 설정
+3. **Branch**를 `main` / `docs`로 선택하고 저장
+4. 설정 후 약간의 시간이 지나면 `https://damianospark.github.io/quiet-classes/`로 접근 가능
+
+#### 2-2. 변경사항 배포
+
+```bash
+git add .
+git commit -m "feat: 새 Codelab 추가"
+git push origin main
+```
+
+### 3. 현재 강의 목록
+
+- **4강**: [팀 협업 중심 전략 기획](https://damianospark.github.io/quiet-classes/digi-literacy1-04/)
+  - Notion·Google Workspace·ChatGPT 활용
+- **5강**: [AI 포트폴리오 시각화](https://damianospark.github.io/quiet-classes/digi-literacy1-05/)
+  - Canva·Gemini·ChatGPT 활용
+
+### 4. 새 강의 추가 워크플로
+
+```bash
+# 1. source 폴더에 Markdown 작성
+vim source/new-codelab.md
+
+# 2. claat로 변환
+./claat export source/new-codelab.md
+
+# 3. docs로 이동
+mv new-codelab docs/
+
+# 4. Git 커밋 & 푸시
+git add .
+git commit -m "feat: new-codelab 추가"
+git push origin main
+```
+
+### 5. Google Docs 기반 작성 (선택)
+
+Google Docs로 작성 후 공유 링크를 사용해 변환할 수도 있습니다:
+
+```bash
+./claat export https://docs.google.com/document/d/YOUR_DOC_ID
+```
+
+Docs 작성 시 [Google Codelab 포맷 가이드](https://github.com/googlecodelabs/tools/tree/main/claat)를 참고하세요.
+
+---
+
+### 참고 자료
+
+- [claat 도구 공식 문서](https://github.com/googlecodelabs/tools/tree/main/claat)
+- [Codelab 포맷 가이드](https://github.com/googlecodelabs/tools/blob/main/FORMAT-GUIDE.md)
+- [Google Codelabs 예시](https://codelabs.developers.google.com/)

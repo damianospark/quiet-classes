@@ -1,380 +1,213 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="디지털 리터러시 4강: Notion·Google Workspace·ChatGPT로 팀 협업 전략 기획 프로젝트를 단계별로 완성하는 Google Codelab"
-    />
-    <title>디지털 리터러시 4강 | 팀 협업 중심 전략 기획 프로젝트 완성</title>
-    <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css" />
-    <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700" />
-    <style>
-      :root {
-        color-scheme: light;
-      }
 
-      body {
-        margin: 0;
-        font-family: "Google Sans", "Roboto", sans-serif;
-        background: #f5f7fb;
-        color: #202124;
-      }
+<!doctype html>
 
-      header.hero {
-        padding: 48px 24px;
-        background: linear-gradient(135deg, #1a73e8, #5b9dff);
-        color: #fff;
-        text-align: center;
-      }
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>4강 | 팀 협업 중심의 전략 기획 프로젝트 완성</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="digi-literacy1-04"
+                  title="4강 | 팀 협업 중심의 전략 기획 프로젝트 완성"
+                  environment="web"
+                  feedback-link="https://github.com/damianospark/quiet-classes/issues/new">
+    
+      <google-codelab-step label="0. 오리엔테이션" duration="3">
+        <p>4강은 &#34;협업과 전략 기획&#34;을 완성하기 위한 프로젝트 기반 수업입니다. 좌측 사이드바 단계에 따라 이동하며 각 실습을 순차적으로 진행하세요.</p>
+<h2 is-upgraded>역할 정리</h2>
+<ul>
+<li><strong>A (전략 담당자)</strong>: 기획 아이데이션·KPI·Slides 총괄</li>
+<li><strong>B (콘텐츠 담당자)</strong>: 자기소개서 작성, 문장 교정, 공유 메시지 관리</li>
+<li><strong>팀장</strong>: Notion 일정·산출물 통합, 회고 수집 및 보고</li>
+</ul>
+<p><strong>&lt;보완요청&gt;</strong> 역할 분담 다이어그램 이미지 삽입</p>
 
-      header.hero h1 {
-        margin: 0 0 16px;
-        font-size: 2.6rem;
-        letter-spacing: -0.02em;
-      }
 
-      header.hero p {
-        margin: 0;
-        font-size: 1.15rem;
-        opacity: 0.92;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="1. 실습 환경 세팅" duration="5">
+        <p>조별 협업 환경을 동일하게 맞추어 권한과 템플릿을 정렬합니다.</p>
+<h2 is-upgraded>준비 체크리스트</h2>
+<ul>
+<li>[ ] Notion 워크스페이스에 &#34;4강 전략 프로젝트&#34; 페이지 생성</li>
+<li>[ ] Google Drive 공유 폴더 생성 후 Docs·Sheets·Slides 편집 권한 부여</li>
+<li>[ ] ChatGPT 대화 아카이브용 &#34;프롬프트 기록&#34; 섹션을 Notion에 추가</li>
+<li>[ ] 역할 배정표와 연락처를 Notion 하위 페이지에 정리</li>
+</ul>
+<h2 is-upgraded>참고 자료</h2>
+<ul>
+<li><a href="https://www.notion.so/help/guides/creating-a-notion-page" target="_blank">Notion 페이지 생성 가이드</a></li>
+<li><a href="https://workspace.google.com/learning-center/products/drive/" target="_blank">Google Drive 공유 폴더 설정</a></li>
+</ul>
+<h2 is-upgraded>성과물</h2>
+<p>Notion 페이지 링크와 Drive 폴더 링크를 팀 채팅방에 게시합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> 실습 환경 확인 체크리스트 캡처 삽입</p>
 
-      main {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 32px 24px 56px;
-      }
 
-      footer {
-        text-align: center;
-        padding: 24px;
-        color: #5f6368;
-        font-size: 0.9rem;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="2. Notion 타임라인 설계" duration="12">
+        <p>팀장이 프로젝트 일정을 타임라인으로 구성하고 단계별 완료 조건을 명시합니다.</p>
+<ol type="1">
+<li>Notion 타임라인 데이터베이스를 만들고 속성(담당자, 상태, 시작/종료, 산출물 링크)을 추가합니다.</li>
+<li>6개 마일스톤(아이데이션, KPI, Slides, 자기소개서, 통합, 리뷰)을 1시간 단위로 배치합니다.</li>
+<li>각 카드에 완료 조건을 체크박스로 기록하고 예상 리스크/대응책 메모를 추가합니다.</li>
+<li>페이지 상단에 &#34;오늘의 목표&#34; 콜아웃 블록을 만들고 실습 시작 시 업데이트합니다.</li>
+</ol>
+<h2 is-upgraded>성과물</h2>
+<p>완성된 타임라인 스크린샷을 캡처해 Notion 페이지 표지 갤러리에 첨부합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> Notion 타임라인 구성 예시 이미지 삽입</p>
 
-      codelab-step::part(header) {
-        font-size: 1.3rem;
-        font-weight: 600;
-      }
 
-      codelab-step::part(content) {
-        line-height: 1.68;
-        font-size: 1.02rem;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="3. ChatGPT 브레인스토밍 &amp; Docs" duration="15">
+        <p>A 담당자가 ChatGPT와 Google Docs로 전략 기획 아이디어를 생성하고 협업 피드백을 반영합니다.</p>
+<h2 is-upgraded>실습 절차</h2>
+<ol type="1">
+<li>ChatGPT에 아래 프롬프트를 입력합니다.</li>
+</ol>
+<pre><code>&#34;대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘.
+각 단계에 필요 도구, 예상 산출물, KPI 후보를 포함해줘.&#34;
+</code></pre>
+<ol type="1" start="2">
+<li>출력 결과를 Docs 템플릿에 붙여넣고 제안 모드로 전환합니다.</li>
+<li>B 담당자와 팀장은 댓글로 보완 의견을 남기고 해결된 항목은 &#34;해결됨&#34; 처리합니다.</li>
+<li>버전 이력에 &#34;브레인스토밍 확정본&#34;을 저장한 뒤 링크를 Notion 타임라인 카드에 첨부합니다.</li>
+</ol>
+<h2 is-upgraded>성과물</h2>
+<p>Docs 최종 링크와 핵심 의사결정 요약 3줄을 Notion 회의록 섹션에 기록합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> Docs 제안 모드 전/후 비교 이미지 삽입</p>
 
-      .time-box {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        padding: 6px 12px;
-        border-radius: 18px;
-        background: rgba(26, 115, 232, 0.12);
-        color: #174ea6;
-        font-size: 0.85rem;
-        margin-bottom: 16px;
-      }
 
-      .callout-tip {
-        background: #e8f0fe;
-        border-left: 4px solid #1a73e8;
-        padding: 14px 18px;
-        border-radius: 10px;
-        margin: 20px 0;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="4. KPI 데이터 시각화" duration="15">
+        <p>A 담당자가 KPI를 정리하고 Google Sheets에서 시각화 대시보드를 구축합니다.</p>
+<ol type="1">
+<li>ChatGPT에 KPI 구성 프롬프트를 전달해 표 초안을 생성합니다.</li>
+</ol>
+<pre><code>&#34;다음 전략 기획을 KPI로 정리해줘. 열은 목표, 지표명, 측정 방법, 기준값, 목표값, 측정 주기, 책임자로 구성해줘.&#34;
+</code></pre>
+<ol type="1" start="2">
+<li>생성된 표를 Sheets에 붙여넣고 조건부서식으로 진행 상태를 색상으로 표시합니다.</li>
+<li>필터 보기(담당자별, 지표 유형별)를 만들어 협업 편의성을 높입니다.</li>
+<li>막대 그래프/도넛 그래프를 생성해 Slides로 임포트 가능한 차트를 준비합니다.</li>
+</ol>
+<h2 is-upgraded>실습 팁</h2>
+<ul>
+<li>&#34;현재 진행률&#34; 열을 추가해 오늘 기준 self-report를 기록하세요.</li>
+<li>Sheets 댓글에 KPI 근거 데이터를 링크해 검증 가능성을 확보하세요.</li>
+</ul>
+<h2 is-upgraded>성과물</h2>
+<p>Sheets 링크와 차트 URL을 Docs·Notion 타임라인 카드에 삽입합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> 조건부서식 적용된 KPI 시트 이미지 삽입</p>
 
-      .callout-warning {
-        background: #fde7e9;
-        border-left: 4px solid #d93025;
-        padding: 14px 18px;
-        border-radius: 10px;
-        margin: 20px 0;
-      }
 
-      .checklist {
-        background: #fff;
-        border: 1px solid #d2d7e5;
-        border-radius: 12px;
-        padding: 18px 22px;
-        margin: 22px 0;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="5. 전략 슬라이드 요약" duration="12">
+        <p>A 담당자가 Slides 한 장으로 전략 스토리를 시각화합니다.</p>
+<ol type="1">
+<li>Sheets 차트를 Slides로 임포트하고 실시간 연동을 확인합니다.</li>
+<li>레이아웃을 3구역(전략 요약, KPI 그래프, 실행 타임라인)으로 구성합니다.</li>
+<li>ChatGPT에 &#34;30초 엘리베이터 피치&#34;를 요청해 발표자 노트에 삽입합니다.</li>
+<li>버전 이력에 &#34;전략 요약 v1&#34;을 저장하고 공유 권한을 &#34;댓글 가능&#34;으로 설정합니다.</li>
+</ol>
+<h2 is-upgraded>성과물</h2>
+<p>Slides 링크와 PDF 버전을 Drive 폴더에 저장한 뒤 Notion 회고 섹션에 첨부합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> Slides 완성본 썸네일 삽입</p>
 
-      .checklist h4 {
-        margin-top: 0;
-        font-size: 1.05rem;
-      }
 
-      .checklist ul {
-        list-style: none;
-        padding-left: 0;
-        margin: 12px 0 0;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="6. 자기소개서 협업 편집" duration="18">
+        <p>B 담당자가 프로젝트 경험 기반 자기소개서를 작성하고 팀 피드백을 반영합니다.</p>
+<ol type="1">
+<li>다음 프롬프트로 초안을 생성합니다.</li>
+</ol>
+<pre><code>&#34;전략 기획 프로젝트에서 데이터 기반 의사결정을 이끈 경험을 500자 이내 자기소개서로 작성해줘.
+도입-과제-행동-성과-다짐 구조를 따르고 KPI 수치를 포함해줘.&#34;
+</code></pre>
+<ol type="1" start="2">
+<li>Docs에 붙여넣은 뒤 제안 모드로 전환합니다.</li>
+<li>A 담당자와 팀장은 표현 명료성·정량 근거·협업 역할 관점에서 검토합니다.</li>
+<li>최종본을 PDF로 내보내 &#34;자기소개서_v1.pdf&#34;로 Drive에 저장합니다.</li>
+</ol>
+<h2 is-upgraded>검토 포인트</h2>
+<ul>
+<li>[ ] 핵심 문장마다 구체적 수치가 포함되어 있는가?</li>
+<li>[ ] 문장 길이가 20~25자 범위 안에서 읽기 쉬운가?</li>
+<li>[ ] 협업 경험과 개인 기여가 명확히 구분되는가?</li>
+</ul>
+<h2 is-upgraded>성과물</h2>
+<p>Docs 링크·PDF 파일·수정 요약을 Notion 회고 섹션에 업로드합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> Docs 제안 모드 캡처 삽입</p>
 
-      .checklist li {
-        position: relative;
-        padding-left: 28px;
-        margin-bottom: 10px;
-      }
 
-      .checklist li::before {
-        content: "▢";
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #1a73e8;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="7. Notion 통합 &amp; 회고" duration="10">
+        <p>팀장이 모든 산출물을 Notion 프로젝트 페이지에 연결하고 회고 로그를 정리합니다.</p>
+<ol type="1">
+<li>타임라인 각 카드에 Docs, Sheets, Slides, PDF 링크를 첨부합니다.</li>
+<li>완료 시각·피드백 필요 여부를 속성으로 업데이트합니다.</li>
+<li>하단에 &#34;회고(Log)&#34; 데이터베이스를 만들고 KPT 항목을 작성합니다.</li>
+<li>5강 준비 체크리스트(포트폴리오용 이미지, 텍스트, KPI 표)를 추가합니다.</li>
+</ol>
+<h2 is-upgraded>성과물</h2>
+<p>Notion 공개 링크와 회고 요약 3줄을 팀 채팅과 담당 교수에게 공유합니다.</p>
+<p><strong>&lt;보완요청&gt;</strong> Notion 회고 보드 캡처 삽입</p>
 
-      .resource-links {
-        display: grid;
-        gap: 12px;
-        margin: 20px 0;
-      }
 
-      .resource-links a {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 12px 16px;
-        border-radius: 8px;
-        background: rgba(26, 115, 232, 0.12);
-        color: #174ea6;
-        text-decoration: none;
-        font-weight: 500;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="8. 협업 품질 점검" duration="6">
+        <p>팀 전체가 품질 점검 리스트를 확인합니다.</p>
+<ul>
+<li>[ ] Docs·Sheets·Slides에 미해결 댓글이 없는지 확인합니다.</li>
+<li>[ ] Drive 폴더 구조가 &#34;01_Docs / 02_Sheets / 03_Slides / 04_Resume&#34;로 정리되었는지 검토합니다.</li>
+<li>[ ] ChatGPT 대화 URL을 Notion &#34;참고 자료&#34; 섹션에 기록합니다.</li>
+<li>[ ] Notion 타임라인 모든 카드가 &#34;완료&#34; 상태인지 확인합니다.</li>
+</ul>
+<p>검증 후 Drive 폴더를 학교 계정과 개인 계정에 각각 백업합니다.</p>
 
-      .resource-links a span {
-        font-size: 0.94rem;
-      }
 
-      .deliverable {
-        background: #eef2ff;
-        border-left: 4px solid #5b6fe6;
-        padding: 14px 18px;
-        border-radius: 10px;
-        margin: 20px 0;
-      }
+      </google-codelab-step>
+    
+      <google-codelab-step label="9. 확장 미션" duration="4">
+        <ul>
+<li>직무별 맞춤 전략 요약을 ChatGPT로 생성해 Notion 자료실에 추가</li>
+<li>Slides를 GIF 애니메이션으로 변환해 포트폴리오 삽입 가능성 테스트</li>
+<li>다른 팀과 산출물을 교차 피드백하는 패널 토론 주제 선정</li>
+</ul>
+<p>확장 미션은 선택 사항이며, 수행 결과를 5강 준비 자료에 첨부하면 추가 피드백을 받을 수 있습니다.</p>
 
-      .two-columns {
-        display: grid;
-        gap: 18px;
-      }
 
-      @media (min-width: 960px) {
-        .two-columns {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="hero">
-      <h1>4강 | 팀 협업 중심의 전략 기획 프로젝트 완성</h1>
-      <p>Notion·Google Workspace·ChatGPT를 단계별로 활용해 디지털 협업 전략을 구축합니다.</p>
-    </header>
-    <main>
-      <google-codelab
-        id="digi-literacy1-04"
-        title="4강 | 디지털 도구 기반 전략 실행 기술"
-        environment="web"
-        feedback-link="https://github.com/damianospark/quiet-classes/issues/new"
-      >
-        <google-codelab-step label="0. 오리엔테이션" duration="3">
-          <div class="time-box">예상 소요 3분</div>
-          <p>
-            4강은 “협업과 전략 기획”을 완성하기 위한 프로젝트 기반 수업입니다. 좌측 사이드바 단계에 따라 이동하며 각
-            실습을 순차적으로 진행하세요.
-          </p>
-          <div class="callout-tip">
-            <strong>역할 정리</strong>
-            <ul>
-              <li>A (전략 담당자): 기획 아이데이션·KPI·Slides 총괄</li>
-              <li>B (콘텐츠 담당자): 자기소개서 작성, 문장 교정, 공유 메시지 관리</li>
-              <li>팀장: Notion 일정·산출물 통합, 회고 수집 및 보고</li>
-            </ul>
-          </div>
-          <p><보완요청>역할 분담 다이어그램 이미지 삽입</보완요청></p>
-        </google-codelab-step>
+      </google-codelab-step>
+    
+  </google-codelab>
 
-        <google-codelab-step label="1. 실습 환경 세팅" duration="5">
-          <div class="time-box">예상 소요 5분</div>
-          <p>조별 협업 환경을 동일하게 맞추어 권한과 템플릿을 정렬합니다.</p>
-          <div class="checklist">
-            <h4>준비 체크리스트</h4>
-            <ul>
-              <li>Notion 워크스페이스에 “4강 전략 프로젝트” 페이지 생성</li>
-              <li>Google Drive 공유 폴더 생성 후 Docs·Sheets·Slides 편집 권한 부여</li>
-              <li>ChatGPT 대화 아카이브용 “프롬프트 기록” 섹션을 Notion에 추가</li>
-              <li>역할 배정표와 연락처를 Notion 하위 페이지에 정리</li>
-            </ul>
-          </div>
-          <div class="resource-links">
-            <a href="https://www.notion.so/help/guides/creating-a-notion-page" target="_blank" rel="noopener"
-              ><span>Notion 페이지 생성 가이드</span></a
-            >
-            <a href="https://workspace.google.com/learning-center/products/drive/" target="_blank" rel="noopener"
-              ><span>Google Drive 공유 폴더 설정</span></a
-            >
-          </div>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>Notion 페이지 링크와 Drive 폴더 링크를 팀 채팅방에 게시합니다.</p>
-          </div>
-          <p><보완요청>실습 환경 확인 체크리스트 캡처 삽입</보완요청></p>
-        </google-codelab-step>
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
 
-        <google-codelab-step label="2. Notion 타임라인 설계" duration="12">
-          <div class="time-box">예상 소요 12분</div>
-          <p>팀장이 프로젝트 일정을 타임라인으로 구성하고 단계별 완료 조건을 명시합니다.</p>
-          <ol>
-            <li>Notion 타임라인 데이터베이스를 만들고 속성(담당자, 상태, 시작/종료, 산출물 링크)을 추가합니다.</li>
-            <li>6개 마일스톤(아이데이션, KPI, Slides, 자기소개서, 통합, 리뷰)을 1시간 단위로 배치합니다.</li>
-            <li>각 카드에 완료 조건을 체크박스로 기록하고 예상 리스크/대응책 메모를 추가합니다.</li>
-            <li>페이지 상단에 “오늘의 목표” 콜아웃 블록을 만들고 실습 시작 시 업데이트합니다.</li>
-          </ol>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>완성된 타임라인 스크린샷을 캡처해 Notion 페이지 표지 갤러리에 첨부합니다.</p>
-          </div>
-          <p><보완요청>Notion 타임라인 구성 예시 이미지 삽입</보완요청></p>
-        </google-codelab-step>
-
-        <google-codelab-step label="3. ChatGPT 브레인스토밍 & Docs" duration="15">
-          <div class="time-box">예상 소요 15분</div>
-          <p>A 담당자가 ChatGPT와 Google Docs로 전략 기획 아이디어를 생성하고 협업 피드백을 반영합니다.</p>
-          <ol>
-            <li>ChatGPT에 아래 프롬프트를 입력합니다.</li>
-          </ol>
-          <pre><code>"대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘.
-각 단계에 필요 도구, 예상 산출물, KPI 후보를 포함해줘."</code></pre>
-          <ol start="2">
-            <li>출력 결과를 Docs 템플릿에 붙여넣고 제안 모드로 전환합니다.</li>
-            <li>B 담당자와 팀장은 댓글로 보완 의견을 남기고 해결된 항목은 “해결됨” 처리합니다.</li>
-            <li>버전 이력에 “브레인스토밍 확정본”을 저장한 뒤 링크를 Notion 타임라인 카드에 첨부합니다.</li>
-          </ol>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>Docs 최종 링크와 핵심 의사결정 요약 3줄을 Notion 회의록 섹션에 기록합니다.</p>
-          </div>
-          <p><보완요청>Docs 제안 모드 전/후 비교 이미지 삽입</보완요청></p>
-        </google-codelab-step>
-
-        <google-codelab-step label="4. KPI 데이터 시각화" duration="15">
-          <div class="time-box">예상 소요 15분</div>
-          <p>A 담당자가 KPI를 정리하고 Google Sheets에서 시각화 대시보드를 구축합니다.</p>
-          <ol>
-            <li>ChatGPT에 KPI 구성 프롬프트를 전달해 표 초안을 생성합니다.</li>
-          </ol>
-          <pre><code>"다음 전략 기획을 KPI로 정리해줘. 열은 목표, 지표명, 측정 방법, 기준값, 목표값, 측정 주기, 책임자로 구성해줘."</code></pre>
-          <ol start="2">
-            <li>생성된 표를 Sheets에 붙여넣고 조건부서식으로 진행 상태를 색상으로 표시합니다.</li>
-            <li>필터 보기(담당자별, 지표 유형별)를 만들어 협업 편의성을 높입니다.</li>
-            <li>막대 그래프/도넛 그래프를 생성해 Slides로 임포트 가능한 차트를 준비합니다.</li>
-          </ol>
-          <div class="callout-tip">
-            <strong>실습 팁</strong>
-            <ul>
-              <li>"현재 진행률" 열을 추가해 오늘 기준 self-report를 기록하세요.</li>
-              <li>Sheets 댓글에 KPI 근거 데이터를 링크해 검증 가능성을 확보하세요.</li>
-            </ul>
-          </div>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>Sheets 링크와 차트 URL을 Docs·Notion 타임라인 카드에 삽입합니다.</p>
-          </div>
-          <p><보완요청>조건부서식 적용된 KPI 시트 이미지 삽입</보완요청></p>
-        </google-codelab-step>
-
-        <google-codelab-step label="5. 전략 슬라이드 요약" duration="12">
-          <div class="time-box">예상 소요 12분</div>
-          <p>A 담당자가 Slides 한 장으로 전략 스토리를 시각화합니다.</p>
-          <ol>
-            <li>Sheets 차트를 Slides로 임포트하고 실시간 연동을 확인합니다.</li>
-            <li>레이아웃을 3구역(전략 요약, KPI 그래프, 실행 타임라인)으로 구성합니다.</li>
-            <li>ChatGPT에 “30초 엘리베이터 피치”를 요청해 발표자 노트에 삽입합니다.</li>
-            <li>버전 이력에 “전략 요약 v1”을 저장하고 공유 권한을 “댓글 가능”으로 설정합니다.</li>
-          </ol>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>Slides 링크와 PDF 버전을 Drive 폴더에 저장한 뒤 Notion 회고 섹션에 첨부합니다.</p>
-          </div>
-          <p><보완요청>Slides 완성본 썸네일 삽입</보완요청></p>
-        </google-codelab-step>
-
-        <google-codelab-step label="6. 자기소개서 협업 편집" duration="18">
-          <div class="time-box">예상 소요 18분</div>
-          <p>B 담당자가 프로젝트 경험 기반 자기소개서를 작성하고 팀 피드백을 반영합니다.</p>
-          <ol>
-            <li>다음 프롬프트로 초안을 생성합니다.</li>
-          </ol>
-          <pre><code>"전략 기획 프로젝트에서 데이터 기반 의사결정을 이끈 경험을 500자 이내 자기소개서로 작성해줘.
-도입-과제-행동-성과-다짐 구조를 따르고 KPI 수치를 포함해줘."</code></pre>
-          <ol start="2">
-            <li>Docs에 붙여넣은 뒤 제안 모드로 전환합니다.</li>
-            <li>A 담당자와 팀장은 표현 명료성·정량 근거·협업 역할 관점에서 검토합니다.</li>
-            <li>최종본을 PDF로 내보내 “자기소개서_v1.pdf”로 Drive에 저장합니다.</li>
-          </ol>
-          <div class="checklist">
-            <h4>검토 포인트</h4>
-            <ul>
-              <li>핵심 문장마다 구체적 수치가 포함되어 있는가?</li>
-              <li>문장 길이가 20~25자 범위 안에서 읽기 쉬운가?</li>
-              <li>협업 경험과 개인 기여가 명확히 구분되는가?</li>
-            </ul>
-          </div>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>Docs 링크·PDF 파일·수정 요약을 Notion 회고 섹션에 업로드합니다.</p>
-          </div>
-          <p><보완요청>Docs 제안 모드 캡처 삽입</보완요청></p>
-        </google-codelab-step>
-
-        <google-codelab-step label="7. Notion 통합 & 회고" duration="10">
-          <div class="time-box">예상 소요 10분</div>
-          <p>팀장이 모든 산출물을 Notion 프로젝트 페이지에 연결하고 회고 로그를 정리합니다.</p>
-          <ol>
-            <li>타임라인 각 카드에 Docs, Sheets, Slides, PDF 링크를 첨부합니다.</li>
-            <li>완료 시각·피드백 필요 여부를 속성으로 업데이트합니다.</li>
-            <li>하단에 “회고(Log)” 데이터베이스를 만들고 KPT 항목을 작성합니다.</li>
-            <li>5강 준비 체크리스트(포트폴리오용 이미지, 텍스트, KPI 표)를 추가합니다.</li>
-          </ol>
-          <div class="deliverable">
-            <strong>성과물</strong>
-            <p>Notion 공개 링크와 회고 요약 3줄을 팀 채팅과 담당 교수에게 공유합니다.</p>
-          </div>
-          <p><보완요청>Notion 회고 보드 캡처 삽입</보완요청></p>
-        </google-codelab-step>
-
-        <google-codelab-step label="8. 협업 품질 점검" duration="6">
-          <div class="time-box">예상 소요 6분</div>
-          <p>팀 전체가 품질 점검 리스트를 확인합니다.</p>
-          <ul>
-            <li>Docs·Sheets·Slides에 미해결 댓글이 없는지 확인합니다.</li>
-            <li>Drive 폴더 구조가 “01_Docs / 02_Sheets / 03_Slides / 04_Resume”로 정리되었는지 검토합니다.</li>
-            <li>ChatGPT 대화 URL을 Notion “참고 자료” 섹션에 기록합니다.</li>
-            <li>Notion 타임라인 모든 카드가 “완료” 상태인지 확인합니다.</li>
-          </ul>
-          <p>검증 후 Drive 폴더를 학교 계정과 개인 계정에 각각 백업합니다.</p>
-        </google-codelab-step>
-
-        <google-codelab-step label="9. 확장 미션" duration="4">
-          <div class="time-box">선택 실습 4분</div>
-          <ul>
-            <li>직무별 맞춤 전략 요약을 ChatGPT로 생성해 Notion 자료실에 추가</li>
-            <li>Slides를 GIF 애니메이션으로 변환해 포트폴리오 삽입 가능성 테스트</li>
-            <li>다른 팀과 산출물을 교차 피드백하는 패널 토론 주제 선정</li>
-          </ul>
-          <p>확장 미션은 선택 사항이며, 수행 결과를 5강 준비 자료에 첨부하면 추가 피드백을 받을 수 있습니다.</p>
-        </google-codelab-step>
-      </google-codelab>
-    </main>
-    <footer>
-      &copy; <span id="footer-year"></span> quiet-classes. 모든 권리 보유.
-    </footer>
-    <script>
-      document.getElementById("footer-year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+</body>
 </html>

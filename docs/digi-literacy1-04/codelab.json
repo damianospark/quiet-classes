@@ -1,0 +1,28 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2025-11-07T20:22:40+09:00",
+  "id": "digi-literacy1-04",
+  "duration": 100,
+  "title": "4강 | 팀 협업 중심의 전략 기획 프로젝트 완성",
+  "authors": "quiet-classes",
+  "summary": "4강 - 팀 협업 중심의 전략 기획 프로젝트 완성",
+  "source": "source/digi-literacy1-04.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "digital-literacy"
+  ],
+  "tags": [
+    "chatgpt",
+    "collaboration",
+    "google-workspace",
+    "notion"
+  ],
+  "feedback": "https://github.com/damianospark/quiet-classes/issues/new",
+  "url": "digi-literacy1-04"
+}
