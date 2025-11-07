@@ -3,48 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>디지털 리터러시 1-05 | Google Codelab 샘플</title>
-    <script type="module" src="https://codelab-elements.appspot.com/components/codelab-elements/codelab-elements.js"></script>
+    <meta
+      name="description"
+      content="디지털 리터러시 5강: Canva·Gemini·ChatGPT를 활용한 AI 포트폴리오 시각화 및 콘텐츠 고도화 Google Codelab"
+    />
+    <title>디지털 리터러시 5강 | AI 포트폴리오 시각화 및 콘텐츠 고도화</title>
+    <script
+      type="module"
+      src="https://codelab-elements.appspot.com/components/codelab-elements/codelab-elements.js"
+    ></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700" />
     <style>
       :root {
-        color-scheme: light dark;
+        color-scheme: light;
       }
 
       body {
         margin: 0;
         font-family: "Google Sans", "Roboto", sans-serif;
-        background: #f8f9fa;
+        background: #f4f9f6;
+        color: #202124;
       }
 
       header.hero {
-        padding: 40px 24px;
-        background: linear-gradient(140deg, #0b8043, #34a853);
+        padding: 48px 24px;
+        background: linear-gradient(135deg, #0b8043, #34a853);
         color: #fff;
         text-align: center;
       }
 
       header.hero h1 {
         margin: 0 0 16px;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
+        letter-spacing: -0.02em;
       }
 
       header.hero p {
         margin: 0;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+        opacity: 0.9;
       }
 
       main {
-        max-width: 960px;
+        max-width: 1040px;
         margin: 0 auto;
-        padding: 24px;
+        padding: 32px 24px 56px;
       }
 
       footer {
         text-align: center;
         padding: 24px;
         color: #5f6368;
+        font-size: 0.9rem;
+      }
+
+      table.curriculum {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 0.95rem;
+      }
+
+      table.curriculum thead {
+        background: #e6f4ea;
+      }
+
+      table.curriculum th,
+      table.curriculum td {
+        border: 1px solid #c8e6c9;
+        padding: 12px;
+        vertical-align: top;
+      }
+
+      table.curriculum strong {
+        display: block;
+        color: #0b8043;
       }
 
       codelab-step::part(header) {
@@ -53,79 +87,231 @@
       }
 
       codelab-step::part(content) {
-        line-height: 1.6;
-        font-size: 1rem;
+        line-height: 1.68;
+        font-size: 1.01rem;
+      }
+
+      .callout-tip {
+        background: #e6f4ea;
+        border-left: 4px solid #34a853;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin: 16px 0;
+      }
+
+      .callout-highlight {
+        background: #fff8e1;
+        border-left: 4px solid #fbbc05;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin: 16px 0;
       }
     </style>
   </head>
   <body>
     <header class="hero">
-      <h1>디지털 리터러시 1-05</h1>
-      <p>온라인 협업과 커뮤니케이션 역량 강화를 위한 Codelab 샘플입니다.</p>
+      <h1>5강 | Canva + Gemini + ChatGPT로 포트폴리오 고도화</h1>
+      <p>4강 산출물을 AI 도구로 재구성해 시각적·언어적 완성도를 높이는 실전 Codelab입니다.</p>
     </header>
     <main>
       <google-codelab
         id="digi-literacy1-05"
-        title="디지털 리터러시 1-05"
+        title="5강 | 성과물 제작 및 시각 표현 기법"
         environment="web"
         feedback-link="https://github.com/damianospark/quiet-classes/issues/new"
       >
-        <codelab-step label="세션 개요" duration="3">
+        <codelab-step label="오리엔테이션" duration="3">
           <p>
-            이 세션은 온라인 협업 도구를 활용해 효율적인 커뮤니케이션을 실습하는 과정입니다.
-            참가자는 실시간 공동 작업과 기록 관리 방법을 익힙니다.
+            5강에서는 4강에서 완성한 전략 기획 산출물을 기반으로, Canva·Gemini·ChatGPT를 결합해 AI 포트폴리오를 완성합니다. 목표는 <strong>전략 → 이미지 → 문장 → 디자인</strong>으로 이어지는 <strong>AI 크리에이티브 역량</strong>을 체험하는 것입니다.
           </p>
-          <ul>
-            <li>온라인 협업 도구(예: Google Workspace) 소개</li>
-            <li>소통 규칙과 역할 분담 안내</li>
-            <li>실습 미션 개요 공유</li>
-          </ul>
+          <div class="callout-tip">
+            <strong>사전 조건</strong>
+            <ul>
+              <li>4강 산출물(Google Docs/Sheets/Slides, Notion 페이지)이 정리되어 있을 것</li>
+              <li>Canva, Google Gemini, ChatGPT 계정 준비</li>
+              <li>AI 생성 콘텐츠 활용 가이드(저작권·표절 정책) 숙지</li>
+            </ul>
+          </div>
         </codelab-step>
 
-        <codelab-step label="협업 환경 세팅" duration="6">
-          <p>다음 순서를 따라 실습 환경을 준비합니다.</p>
-          <h3>1. 공유 드라이브 생성</h3>
-          <p>Google Drive에서 협업용 폴더를 만들고 구성원에게 편집 권한을 부여합니다.</p>
-          <h3>2. 공용 문서 템플릿 복사</h3>
-          <p>아래 템플릿을 복사해 조별 기록지로 활용합니다.</p>
-          <pre><code>https://docs.google.com/document/d/샘플템플릿ID</code></pre>
-          <h3>3. 커뮤니케이션 채널 선정</h3>
-          <p>Google Chat 또는 Slack 채널을 개설하고 공지사항 메시지를 작성합니다.</p>
-        </codelab-step>
-
-        <codelab-step label="실시간 협업 실습" duration="10">
-          <p>조별로 협업 미션을 수행하며 다음 조건을 충족합니다.</p>
+        <codelab-step label="학습 목표와 준비물" duration="5">
+          <h3>학습 목표</h3>
           <ol>
-            <li>회의 기록 문서에 회의 목적과 참여자 역할을 정리합니다.</li>
-            <li>실시간 편집 기능을 통해 회의 중 결정 사항을 업데이트합니다.</li>
-            <li>채팅 채널에 회의 요약과 후속 액션 아이템을 공유합니다.</li>
+            <li>Canva 템플릿을 기반으로 전략 포트폴리오를 구성한다.</li>
+            <li>Gemini로 이미지 리터치·합성·OCR을 수행한다.</li>
+            <li>ChatGPT로 문장을 고도화하고, OCR 데이터를 구조화한다.</li>
+            <li>최종 산출물을 Notion 프로젝트에 통합해 마감한다.</li>
           </ol>
-          <aside class="success">
-            <p>
-              <strong>Tip:</strong> 회의 도중 태그 기능(@)을 활용하면 담당자에게 빠르게 알릴 수 있습니다.
-            </p>
-          </aside>
+          <h3>필수 준비물</h3>
+          <ul>
+            <li>4강 Docs(기획서), Sheets(KPI), Slides(전략 요약), 자기소개서 문서</li>
+            <li>Canva Pro 체험권 또는 학교 계정(팀 작업 가능 여부 확인)</li>
+            <li>Gemini Advanced 또는 이미지 편집이 가능한 버전</li>
+            <li>브랜드 컬러 팔레트, 폰트 가이드(학교/연구실 제공 자료 활용)</li>
+          </ul>
+          <p><보완요청>Canva 템플릿 선정 가이드 이미지 삽입</보완요청></p>
         </codelab-step>
 
-        <codelab-step label="회고 및 다음 단계" duration="4">
-          <p>세션을 마무리하면서 다음 내용을 점검합니다.</p>
+        <codelab-step label="실습 로드맵 정리" duration="4">
+          <p>5강 전체 흐름은 다음과 같습니다.</p>
+          <table class="curriculum">
+            <thead>
+              <tr>
+                <th>단계</th>
+                <th>도구</th>
+                <th>활동</th>
+                <th>산출물</th>
+                <th>담당자</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. 프로젝트 불러오기</strong></td>
+                <td>Notion</td>
+                <td>4강 프로젝트 페이지 점검, 산출물 링크 최신화</td>
+                <td>진행 대시보드</td>
+                <td>팀장</td>
+              </tr>
+              <tr>
+                <td><strong>2. 이미지 리터치</strong></td>
+                <td>Gemini</td>
+                <td>이미지 밝기·배경 편집, 직무 맞춤 재생성</td>
+                <td>리터치된 이미지 세트</td>
+                <td>B (콘텐츠)</td>
+              </tr>
+              <tr>
+                <td><strong>3. OCR 및 데이터 변환</strong></td>
+                <td>Gemini + ChatGPT</td>
+                <td>이미지 텍스트 추출 → 표 구조화 → KPI 연동</td>
+                <td>OCR 추출 결과표</td>
+                <td>A (전략)</td>
+              </tr>
+              <tr>
+                <td><strong>4. 문서 고도화</strong></td>
+                <td>ChatGPT</td>
+                <td>자기소개서와 프로젝트 설명문 톤 정교화</td>
+                <td>고도화된 텍스트</td>
+                <td>B (콘텐츠)</td>
+              </tr>
+              <tr>
+                <td><strong>5. 포트폴리오 제작</strong></td>
+                <td>Canva + Gemini + ChatGPT</td>
+                <td>템플릿 커스터마이징, 이미지·표·텍스트 통합</td>
+                <td>AI 포트폴리오 (PDF/링크)</td>
+                <td>B (콘텐츠)</td>
+              </tr>
+              <tr>
+                <td><strong>6. 결과 통합</strong></td>
+                <td>Notion</td>
+                <td>링크 첨부, 완료 상태 변경, 회고 작성</td>
+                <td>프로젝트 완료 페이지</td>
+                <td>팀장</td>
+              </tr>
+            </tbody>
+          </table>
+        </codelab-step>
+
+        <codelab-step label="1. Notion에서 프로젝트 불러오기" duration="8">
+          <ol>
+            <li>Notion의 4강 페이지를 복제해 “5강 - AI 포트폴리오” 섹션을 추가합니다.</li>
+            <li>각 산출물 링크(Docs, Sheets, Slides, 자기소개서)를 최신 버전으로 교체합니다.</li>
+            <li>완료 상태 속성에 “포트폴리오 반영 여부” 체크박스를 추가합니다.</li>
+          </ol>
+          <p><보완요청>Notion 5강 대시보드 구성 캡처 삽입</보완요청></p>
+        </codelab-step>
+
+        <codelab-step label="2. Gemini 이미지 리터치" duration="15">
+          <h3>B 담당자 실습</h3>
+          <ol>
+            <li>4강 문서와 슬라이드에서 사용한 이미지 3장을 선정합니다.</li>
+            <li>Gemini에 이미지를 업로드하고 다음 프롬프트를 적용합니다.</li>
+          </ol>
+          <pre><code>"이 이미지를 취업 포트폴리오에 활용할 수 있도록, 배경을 밝은 사무실 톤으로 바꾸고 주인공을 선명하게 강조해줘."
+"직무에 맞는 아이콘 스타일로 재생성해줘. 컬러는 #1A73E8, #34A853을 활용해줘."</code></pre>
+          <ol start="3">
+            <li>리터치 전·후 이미지를 비교하고, 조별 피드백을 통해 최종 선택합니다.</li>
+            <li>최종 이미지를 PNG로 다운로드해 Canva Brand Kit에 업로드합니다.</li>
+          </ol>
+          <div class="callout-highlight">
+            <strong>윤리 체크</strong>
+            <p>인물 사진 사용 시 초상권 동의 여부와 AI 변형 허용 범위를 확인합니다.</p>
+          </div>
+          <p><보완요청>Gemini 이미지 편집 화면 캡처 삽입</보완요청></p>
+        </codelab-step>
+
+        <codelab-step label="3. 이미지 OCR → 데이터 표 변환" duration="12">
+          <ol>
+            <li>Gemini의 OCR 기능으로 리터치 이미지에서 텍스트를 추출합니다.</li>
+            <li>추출 결과를 ChatGPT에 전달하고 다음 명령을 실행합니다.</li>
+          </ol>
+          <pre><code>"추출된 텍스트를 KPI 요약 카드 형식으로 재구성해줘. 열은 항목, 핵심 문장, 활용 페이지, 후속 액션으로 구성해줘."</code></pre>
+          <ol start="3">
+            <li>생성된 표를 Google Sheets로 복사해 Canva 임베드용 표로 정리합니다.</li>
+            <li>Canva에서 사용할 수 있도록 CSV로도 내보내 저장합니다.</li>
+          </ol>
+          <p><보완요청>OCR 결과 예시 표 스크린샷 삽입</보완요청></p>
+        </codelab-step>
+
+        <codelab-step label="4. ChatGPT로 문장 고도화" duration="15">
+          <ol>
+            <li>자기소개서 초안과 프로젝트 설명문을 ChatGPT에 입력합니다.</li>
+            <li>다음 프롬프트로 표현을 고도화합니다.</li>
+          </ol>
+          <pre><code>"다음 텍스트를 전문적이고 진정성 있는 어조로 다듬어줘. 400~450자로 유지하고, 핵심 성과에는 수치를 남겨줘."
+"3문장 이내의 프로젝트 요약문을 만들어줘. 학생 포트폴리오 소개에 바로 쓸 수 있도록 구성해줘."</code></pre>
+          <ol start="3">
+            <li>출력 결과를 Docs에 붙여넣고, 팀 피드백 후 최종본을 확정합니다.</li>
+            <li>Canva 포트폴리오에 삽입할 핵심 문장 TOP 3을 선정합니다.</li>
+          </ol>
+          <p><보완요청>ChatGPT 고도화 전후 비교 이미지 삽입</보완요청></p>
+        </codelab-step>
+
+        <codelab-step label="5. Canva 포트폴리오 제작" duration="25">
+          <ol>
+            <li>Canva에서 “AI Career Portfolio” 템플릿을 복제하고, 프로젝트 브랜드 컬러를 적용합니다.</li>
+            <li>Gemini 리터치 이미지와 ChatGPT 고도화 문장을 삽입합니다.</li>
+            <li>Sheets에서 준비한 KPI 표를 Canva의 표 요소 또는 임베드 기능으로 추가합니다.</li>
+            <li>Gemini에서 만든 이미지 세트를 슬라이드별로 배치하고, Magic Write로 슬로건을 생성합니다.</li>
+            <li>PDF로 내보내고, 공유 링크를 생성하여 “보는 사람은 댓글 가능” 권한을 부여합니다.</li>
+          </ol>
+          <p><보완요청>Canva 완성본 미리보기 이미지 삽입</보완요청></p>
+        </codelab-step>
+
+        <codelab-step label="6. 결과 통합 및 마감" duration="10">
+          <ol>
+            <li>Notion 프로젝트 페이지에 Canva 링크, 고도화 자기소개서, OCR 표 링크를 첨부합니다.</li>
+            <li>완료 시각을 기록하고, 담당자별 회고 노트를 “Keep/Problem/Try” 형식으로 작성합니다.</li>
+            <li>마감 체크리스트(링크 공유, 파일 백업, 피드백 요청)를 모두 완료했는지 확인합니다.</li>
+          </ol>
+          <p><보완요청>Notion 마감 체크리스트 캡처 삽입</보완요청></p>
+        </codelab-step>
+
+        <codelab-step label="심화 미션" duration="5">
           <ul>
-            <li>협업 과정의 어려움과 해결 방안을 회고합니다.</li>
-            <li>공유 드라이브의 파일 구조와 접근 권한을 정돈합니다.</li>
-            <li>다음 세션까지 수행할 협업 프로젝트 과제를 안내합니다.</li>
+            <li>포트폴리오를 영문 버전으로 변환해 글로벌 지원 자료로 확장해보기</li>
+            <li>Gemini로 생성한 이미지를 Canva 동영상 템플릿에 적용해 모션 그래픽 제작</li>
+            <li>ChatGPT로 인터뷰 예상 질문과 답변 스크립트 작성 후 Notion에 보완</li>
           </ul>
-          <p>
-            실습 결과물을 저장소에 정리하고, 필요 시 Codelab 콘텐츠를 업데이트하여 학습자에게 공유하세요.
-          </p>
+        </codelab-step>
+
+        <codelab-step label="마무리 및 제출 안내" duration="4">
+          <p>최종 제출 전 다음 사항을 확인하세요.</p>
+          <ul>
+            <li>포트폴리오 PDF·링크, 자기소개서, OCR 표가 Notion에 모두 연결되어 있는가?</li>
+            <li>AI 이미지 사용에 대한 출처·동의 문구가 포함되어 있는가?</li>
+            <li>팀 회고 노트에 개인별 학습 포인트가 기록되어 있는가?</li>
+          </ul>
+          <p>제출이 완료되면 GitHub Issues에 “디지털 리터러시 5강 완료” 템플릿으로 보고를 남기고, 담당 교수에게 공유합니다.</p>
         </codelab-step>
       </google-codelab>
     </main>
     <footer>
-      &copy; <span id="footer-year"></span> damianospark. 모든 권리 보유.
+      &copy; <span id="footer-year"></span> quiet-classes. 모든 권리 보유.
     </footer>
     <script>
       document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
+
 
