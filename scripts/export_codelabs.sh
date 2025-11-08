@@ -5,6 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SOURCE_DIR="$ROOT_DIR/source"
 DOCS_DIR="$ROOT_DIR/docs"
 CLAAT_BIN="${CLAAT_BIN:-$ROOT_DIR/../claat}"
+HOME_URL="https://damianospark.github.io/quiet-classes/"
 
 if [[ ! -x "$CLAAT_BIN" ]]; then
   echo "[오류] claat 실행 파일을 찾을 수 없습니다: $CLAAT_BIN" >&2
@@ -51,6 +52,19 @@ for md in "${MD_FILES[@]}"; do
   rm -rf "$DEST_DIR"
   mv "$SRC_DIR" "$DEST_DIR"
   echo "  ↳ $DEST_DIR" >&2
+  INDEX_HTML="$DEST_DIR/index.html"
+  if [[ -f "$INDEX_HTML" ]]; then
+    python3 - "$INDEX_HTML" "$HOME_URL" <<'PY'
+import sys
+path, home = sys.argv[1:]
+with open(path, encoding="utf-8") as f:
+    data = f.read()
+if 'home-url=' not in data:
+    data = data.replace('<google-codelab ', f'<google-codelab home-url="{home}" ', 1)
+    with open(path, 'w', encoding="utf-8") as f:
+        f.write(data)
+PY
+  fi
   if [[ -d "$SOURCE_DIR/img" ]]; then
     mkdir -p "$DEST_DIR/img"
     cp -R "$SOURCE_DIR/img"/* "$DEST_DIR/img"/ 2>/dev/null || true
