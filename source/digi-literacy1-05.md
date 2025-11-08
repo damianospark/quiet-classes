@@ -29,11 +29,11 @@ Duration: 5
 4강에서 구성한 세 개의 브라우저 창을 유지하면서 5강 실습에 맞게 자료를 정리합니다.
 
 ### 준비 체크리스트
-* <input type="checkbox">팀장 창: Notion `프로젝트 보드` 페이지를 복제해 `5강 - AI 포트폴리오` 섹션을 만들고 공유 링크를 복사해 둔다.
-* <input type="checkbox">팀장 창: `/데이터베이스 - 테이블`로 `자료 보관소`와 `포트폴리오 재료` 테이블을 인라인으로 배치한다.
-* <input type="checkbox">시크릿 창 1(A): Google Docs 기획 문서, Google Sheets KPI·OCR 시트 공유 링크를 확인하고 Notion 테이블에 기록한다.
-* <input type="checkbox">시크릿 창 2(B): Google Docs 자기소개서, Google Slides 포트폴리오 슬라이드 공유 링크를 확인한다.
-* <input type="checkbox">Canva Brand Kit와 Gemini Advanced, ChatGPT GPT-4o 계정이 각각 로그인되어 있는지 점검한다.
+1. ✅ 팀장 창: Notion `프로젝트 보드` 페이지를 복제해 `5강 - AI 포트폴리오` 섹션을 만들고 공유 링크를 복사해 둔다.
+1. ✅ 팀장 창: `/데이터베이스 - 테이블`로 `자료 보관소`와 `포트폴리오 재료` 테이블을 인라인으로 배치한다.
+1. ✅ 시크릿 창 1(A): Google Docs 기획 문서, Google Sheets KPI·OCR 시트 공유 링크를 확인하고 Notion 테이블에 기록한다.
+1. ✅ 시크릿 창 2(B): Google Docs 자기소개서, Google Slides 포트폴리오 슬라이드 공유 링크를 확인한다.
+1. ✅ Canva Brand Kit와 Gemini Advanced, ChatGPT GPT-4o 계정이 각각 로그인되어 있는지 점검한다.
 
 ### 브라우저 운영 팁
 - 창 제목을 `팀장/전략(A)/콘텐츠(B)`로 바꿔 혼선을 줄이고, 링크 전달은 모두 Notion 테이블을 통해 관리한다.
@@ -162,10 +162,10 @@ Duration: 6
 
 최종 제출 전 반드시 확인해야 할 항목입니다.
 
-* <input type="checkbox">포트폴리오 PDF·Canva 링크·자기소개서·OCR 표가 Notion에서 정상적으로 열리고, 모든 공유 권한이 `댓글 가능`인지 확인한다.
-* <input type="checkbox">AI 이미지 사용에 대한 출처/동의 문구가 포트폴리오에 포함되어 있는지 검토한다.
-* <input type="checkbox">Notion `최종 산출물` 데이터베이스와 `프로젝트 보드`의 `상태`가 모두 완료로 표시되는지 확인한다.
-* <input type="checkbox">GitHub Pages 미리보기 URL을 별도 창에서 열어 최신 버전이 반영되었는지 확인한다.
+1. ✅ 포트폴리오 PDF·Canva 링크·자기소개서·OCR 표가 Notion에서 정상적으로 열리고, 모든 공유 권한이 `댓글 가능`인지 확인한다.
+1. ✅ AI 이미지 사용에 대한 출처/동의 문구가 포트폴리오에 포함되어 있는지 검토한다.
+1. ✅ Notion `최종 산출물` 데이터베이스와 `프로젝트 보드`의 `상태`가 모두 완료로 표시되는지 확인한다.
+1. ✅ GitHub Pages 미리보기 URL을 별도 창에서 열어 최신 버전이 반영되었는지 확인한다.
 
 누락이 발견되면 해당 단계로 돌아가 수정 후 다시 체크하세요.
 
