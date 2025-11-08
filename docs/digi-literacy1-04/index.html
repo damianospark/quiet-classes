@@ -217,12 +217,10 @@ style(&#34;작업중&#34;, &#34;b&#34;, &#34;blue_background&#34;)
         <p>A 담당자가 ChatGPT와 Google Docs로 전략 기획 아이디어를 생성하고 협업 피드백을 반영합니다.</p>
 <h2 is-upgraded>실습 절차</h2>
 <ol type="1">
-<li>ChatGPT에 아래 프롬프트를 입력합니다.</li>
-</ol>
-<pre><code language="language-text" class="language-text">대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘.
+<li>ChatGPT에 아래 프롬프트를 입력합니다.<pre><code language="language-text" class="language-text">대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘.
 각 단계에 필요 도구, 예상 산출물, KPI 후보를 포함해줘.
 </code></pre>
-<ol type="1" start="2">
+</li>
 <li>출력 결과를 Docs 템플릿에 붙여넣고 제안 모드로 전환합니다.</li>
 <li>B 담당자와 팀장은 댓글로 보완 의견을 남기고 해결된 항목은 &#34;해결됨&#34; 처리합니다.</li>
 <li>버전 이력에 &#34;브레인스토밍 확정본&#34;을 저장한 뒤 링크를 Notion 프로젝트 보드 행에 첨부합니다.</li>
@@ -239,13 +237,12 @@ style(&#34;작업중&#34;, &#34;b&#34;, &#34;blue_background&#34;)
     
       <google-codelab-step label="KPI 데이터 시각화" duration="15">
         <p>A 담당자가 KPI를 정리하고 Google Sheets에서 시각화 대시보드를 구축합니다.</p>
-<p><strong>데이터 형식 안내</strong>: CSV(Comma Separated Values)와 TSV(Tab Separated Values)는 표 데이터를 텍스트로 내보낼 때 사용하는 대표 형식입니다. TSV는 열 사이를 탭으로 구분하기 때문에 Google Sheets에 그대로 붙여넣기 용이하며, 수강생들이 가끔 &#34;css&#34;라고 부르는 서식 파일과는 다릅니다.</p>
+<aside class="special"><p><strong>데이터 형식 안내</strong>: CSV(Comma Separated Values)와 TSV(Tab Separated Values)는 표 데이터를 텍스트로 내보낼 때 사용하는 대표 형식입니다. TSV는 열 사이를 탭으로 구분하기 때문에 Google Sheets에 그대로 붙여넣기 용이하며, 수강생들이 가끔 &#34;css&#34;라고 부르는 서식 파일과는 다릅니다. </p>
+</aside>
 <ol type="1">
-<li>ChatGPT에 아래 프롬프트를 입력해 TSV 표 초안을 생성합니다.</li>
-</ol>
-<pre><code>대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘. 열은 목표	지표명	측정 방법	기준값	목표값	측정 주기	책임자로 구성하고 TSV(탭 구분) 형식으로 출력해줘.
+<li>ChatGPT에 아래 프롬프트를 입력해 TSV 표 초안을 생성합니다.<pre><code>대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘. 열은 목표	지표명	측정 방법	기준값	목표값	측정 주기	책임자로 구성하고 TSV(탭 구분) 형식으로 출력해줘.
 </code></pre>
-<ol type="1" start="2">
+</li>
 <li>시크릿 창 1(A)에서 Google Sheets 새 문서를 열고(A1 셀 선택) TSV 결과를 그대로 붙여넣습니다.</li>
 <li>상단 메뉴 <strong>형식 → 조건부 서식</strong>을 열어 <code>현재 진행률</code> 열에 색상 눈금(빨강-노랑-초록)을 적용합니다. 범위는 자동 감지값(예: E2:E10)을 확인하고 필요 시 조정합니다.</li>
 <li>상단 메뉴 <strong>데이터 → 필터 만들기</strong>로 필터를 추가한 뒤, <code>역할</code> 또는 <code>지표 유형</code>별로 정렬 가능한 드롭다운을 확인합니다.</li>
