@@ -241,5 +241,36 @@
   <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
   <script src="//support.google.com/inapp/api.js"></script>
 
+
+  <script id="codelab-home-override">
+    (function() {
+      var HOME_URL = 'https://damianospark.github.io/quiet-classes/';
+      function apply(target) {
+        var lab = target && target.tagName === 'GOOGLE-CODELAB' ? target : document.querySelector('google-codelab');
+        if (!lab) return;
+        lab.setAttribute('home-url', HOME_URL);
+        try { lab.homeUrl = HOME_URL; } catch (err) {}
+        ['#arrow-back', '#done'].forEach(function(sel) {
+          var anchor = lab.querySelector(sel);
+          if (anchor) {
+            anchor.setAttribute('href', HOME_URL);
+            anchor.onclick = function(evt) {
+              evt.preventDefault();
+              window.location.href = HOME_URL;
+            };
+          }
+        });
+      }
+      document.addEventListener('google-codelab-ready', function(evt) {
+        apply(evt.target);
+      }, { once: false });
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        apply();
+      } else {
+        document.addEventListener('DOMContentLoaded', function() { apply(); });
+      }
+    })();
+  </script>
+
 </body>
 </html>

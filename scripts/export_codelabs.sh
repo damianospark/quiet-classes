@@ -61,8 +61,42 @@ with open(path, encoding="utf-8") as f:
     data = f.read()
 if 'home-url=' not in data:
     data = data.replace('<google-codelab ', f'<google-codelab home-url="{home}" ', 1)
-    with open(path, 'w', encoding="utf-8") as f:
-        f.write(data)
+override_id = 'codelab-home-override'
+if override_id not in data:
+    script = f"""
+  <script id="{override_id}">
+    (function() {{
+      var HOME_URL = '{home}';
+      function apply(target) {{
+        var lab = target && target.tagName === 'GOOGLE-CODELAB' ? target : document.querySelector('google-codelab');
+        if (!lab) return;
+        lab.setAttribute('home-url', HOME_URL);
+        try {{ lab.homeUrl = HOME_URL; }} catch (err) {{}}
+        ['#arrow-back', '#done'].forEach(function(sel) {{
+          var anchor = lab.querySelector(sel);
+          if (anchor) {{
+            anchor.setAttribute('href', HOME_URL);
+            anchor.onclick = function(evt) {{
+              evt.preventDefault();
+              window.location.href = HOME_URL;
+            }};
+          }}
+        }});
+      }}
+      document.addEventListener('google-codelab-ready', function(evt) {{
+        apply(evt.target);
+      }}, {{ once: false }});
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {{
+        apply();
+      }} else {{
+        document.addEventListener('DOMContentLoaded', function() {{ apply(); }});
+      }}
+    }})();
+  </script>
+"""
+    data = data.replace('</body>', script + '\n</body>')
+with open(path, 'w', encoding='utf-8') as f:
+    f.write(data)
 PY
   fi
   if [[ -d "$SOURCE_DIR/img" ]]; then
