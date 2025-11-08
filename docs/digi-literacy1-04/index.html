@@ -132,8 +132,8 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Notion 프로젝트 보드 구성" duration="12">
-        <p>프로젝트를 한눈에 관리할 수 있도록 Notion 테이블 보드를 만든다. 행마다 마일스톤을 배치해 역할과 상태를 체계적으로 추적한다.</p>
+      <google-codelab-step label="Notion 프로젝트 보드 구성" duration="0">
+        <h2 is-upgraded>개요</h2>
 <ol type="1">
 <li>Notion에서 새로 성성되어 있는 빈 페이지의 이름을 &#34;프로젝트관리&#34;로 저장한다.</li>
 <li>페이지 본문에 ‘/&#39; 를 타이핑하고 <code>Database - Inline</code> 을 선택하자마자 오른쪽에 뜨는 컨텍스트 메뉴 아래 &#34;Suggested&#34; 영억에서 <code>More templates</code> 선택하여 template추천 팝업을 띄운다.</li>
@@ -159,14 +159,10 @@ style(&#34;작업중&#34;, &#34;b&#34;, &#34;blue_background&#34;)
 )
 </code></pre>
 </li>
-<li>이후부터 진행하는 실습은 각 태스크의 순서대로 진행</li>
+<li>아래 프로젝트 계획 실습 시나리오의 내용을 기반으로 프로젝트 보드에 Task들을 등록하여 계확을 완료하고 이후부터 진행하는 실습은 각 태스크의 순서대로 진행</li>
 </ol>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="프로젝트 계획 실습 시나리오 (협업 중심)" duration="0">
-        <table>
+<h2 is-upgraded><strong>프로젝트 계획 실습 시나리오 (협업 중심)</strong></h2>
+<table>
 <tr><td colspan="1" rowspan="1"><p>단계</p>
 </td><td colspan="1" rowspan="1"><p>도구</p>
 </td><td colspan="1" rowspan="1"><p>활동</p>
@@ -223,17 +219,20 @@ style(&#34;작업중&#34;, &#34;b&#34;, &#34;blue_background&#34;)
 <ol type="1">
 <li>ChatGPT에 아래 프롬프트를 입력합니다.</li>
 </ol>
-<pre><code>&#34;대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘.
-각 단계에 필요 도구, 예상 산출물, KPI 후보를 포함해줘.&#34;
+<pre><code language="language-text" class="language-text">대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘.
+각 단계에 필요 도구, 예상 산출물, KPI 후보를 포함해줘.
 </code></pre>
 <ol type="1" start="2">
 <li>출력 결과를 Docs 템플릿에 붙여넣고 제안 모드로 전환합니다.</li>
 <li>B 담당자와 팀장은 댓글로 보완 의견을 남기고 해결된 항목은 &#34;해결됨&#34; 처리합니다.</li>
 <li>버전 이력에 &#34;브레인스토밍 확정본&#34;을 저장한 뒤 링크를 Notion 프로젝트 보드 행에 첨부합니다.</li>
 </ol>
+<p class="image-container"><img src="img/7f0984b57aaa84e5.png"></p>
+<p class="image-container"><img src="img/faa1f22984a5bc56.png"></p>
+<p class="image-container"><img src="img/9cb38b993b98e729.png"></p>
 <h2 is-upgraded>성과물</h2>
 <p>Docs 최종 링크와 핵심 의사결정 요약 3줄을 Notion 회의록 섹션에 기록합니다.</p>
-<p><strong>&lt;보완요청&gt;</strong> Docs 제안 모드 전/후 비교 이미지 삽입</p>
+<p class="image-container"><img src="img/6110957ae431818b.png"></p>
 
 
       </google-codelab-step>
@@ -244,7 +243,7 @@ style(&#34;작업중&#34;, &#34;b&#34;, &#34;blue_background&#34;)
 <ol type="1">
 <li>ChatGPT에 아래 프롬프트를 입력해 TSV 표 초안을 생성합니다.</li>
 </ol>
-<pre><code>&#34;대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘. 열은 목표	지표명	측정 방법	기준값	목표값	측정 주기	책임자로 구성하고 TSV(탭 구분) 형식으로 출력해줘.&#34;
+<pre><code>대학생 취업 전략 프로젝트를 위해 직무 역량·네트워킹·포트폴리오 강화를 각각 3단계 실행 계획으로 제안해줘. 열은 목표	지표명	측정 방법	기준값	목표값	측정 주기	책임자로 구성하고 TSV(탭 구분) 형식으로 출력해줘.
 </code></pre>
 <ol type="1" start="2">
 <li>시크릿 창 1(A)에서 Google Sheets 새 문서를 열고(A1 셀 선택) TSV 결과를 그대로 붙여넣습니다.</li>
@@ -286,8 +285,8 @@ style(&#34;작업중&#34;, &#34;b&#34;, &#34;blue_background&#34;)
 <ol type="1">
 <li>다음 프롬프트로 초안을 생성합니다.</li>
 </ol>
-<pre><code>&#34;전략 기획 프로젝트에서 데이터 기반 의사결정을 이끈 경험을 500자 이내 자기소개서로 작성해줘.
-도입-과제-행동-성과-다짐 구조를 따르고 KPI 수치를 포함해줘.&#34;
+<pre><code>전략 기획 프로젝트에서 데이터 기반 의사결정을 이끈 경험을 500자 이내 자기소개서로 작성해줘.
+도입-과제-행동-성과-다짐 구조를 따르고 KPI 수치를 포함해줘.
 </code></pre>
 <ol type="1" start="2">
 <li>Docs에 붙여넣은 뒤 제안 모드로 전환합니다.</li>
