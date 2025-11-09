@@ -48,7 +48,7 @@ Duration: 15
 
 ## 환경 준비 및 브라우저 구성
 
-Duration: 12
+Duration: 18
 
 한 명이 세 개의 창을 사용해 역할을 분담합니다. 기본 Chrome 창은 팀장 역할, 시크릿 창 1은 A 담당자, 시크릿 창 2는 B 담당자 전용으로 두고 각 창에서 문서를 작성합니다.
 
@@ -172,7 +172,7 @@ A 담당자가 ChatGPT와 Google Docs로 전략 기획 아이디어를 생성하
 
 ## KPI 데이터 시각화
 
-Duration: 15
+Duration: 18
 
 A 담당자가 KPI를 정리하고 Google Sheets에서 시각화 대시보드를 구축합니다.
 
