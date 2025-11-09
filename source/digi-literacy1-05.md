@@ -41,7 +41,7 @@ Duration: 5
 
 ## 환경 준비 및 Notion 연동
 
-Duration: 10
+Duration: 5
 
 ### 준비 체크리스트
 
@@ -77,7 +77,7 @@ Duration: 10
 
 ## Canva 기본 기능 점검 (AI 적용 전)
 
-Duration: 12
+Duration: 10
 
 <aside class="info">
 <strong>왜 Canva인가?</strong> Canva는 AI 이전에도 <strong>템플릿 필터</strong>, <strong>브랜드 키트</strong>, <strong>레이아웃 가이드</strong>, <strong>버전 기록</strong> 기능으로 비전문 디자이너도 빠르게 포트폴리오를 제작할 수 있었습니다. 이를 선행 학습하면 AI 기능 적용 시에도 결과물을 일관되게 유지할 수 있습니다.
@@ -110,7 +110,7 @@ Duration: 12
 
 ## 포트폴리오 섹션 구성
 
-Duration: 18
+Duration: 15
 
 1. ✅ Canva 상단 `파일 → 새로운 디자인 만들기`를 선택한 후 `A4 문서`를 클릭해 포트폴리오 페이지를 생성한다. (빈 페이지에 직접 작성해도 되고 시간을 절약하기 위해 템플릿을 선택해서 작성해도 됨. `Black And White odern Architect Resum` 나 `White Pink Professional Resume CV` 추천)
 2. ✅ `페이지 추가`를 클릭해 총 1~2페이지를 구성한다.
@@ -289,7 +289,7 @@ Duration: 12
 
 ## 이미지·문서 분석 기반 설명 강화
 
-Duration: 16
+Duration: 10
 
 1. ✅ [ChatGPT Vision](https://chatgpt.com/) 또는 [Gemini Advanced](https://gemini.google.com/)를 열고 다음 중 하나를 업로드한다.
    - 4강 프로젝트 보드의 내용 ( PDF 또는 스크린 캡처)
