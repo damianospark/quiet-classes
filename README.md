@@ -35,7 +35,7 @@ id: codelab-id
 categories: digital-literacy
 tags: notion, google-workspace
 status: Published
-authors: quiet-classes
+authors: 박진우
 Feedback Link: https://github.com/damianospark/quiet-classes/issues/new
 
 # 강의 제목
@@ -80,9 +80,9 @@ git push origin main
 
 ### 3. 현재 강의 목록
 
-- **4강**: [팀 협업 중심 전략 기획](https://damianospark.github.io/quiet-classes/digi-literacy1-04/)
+- **4모듈**: [팀 협업 중심 전략 기획](https://damianospark.github.io/quiet-classes/digi-literacy1-04/)
   - Notion·Google Workspace·ChatGPT 활용
-- **5강**: [AI 포트폴리오 시각화](https://damianospark.github.io/quiet-classes/digi-literacy1-05/)
+- **5모듈**: [AI 포트폴리오 시각화](https://damianospark.github.io/quiet-classes/digi-literacy1-05/)
   - Canva·Gemini·ChatGPT 활용
 
 ### 4. 새 강의 추가 워크플로

@@ -1,4 +1,4 @@
-summary: 4강 - 팀 협업 중심의 전략 기획 프로젝트 완성
+summary: 4모듈 - 디지털도구 기반 전략 실행 기술
 id: digi-literacy1-04
 categories: digital-literacy
 tags: notion, google-workspace, chatgpt, collaboration
@@ -6,7 +6,7 @@ status: Published
 authors: quiet-classes
 Feedback Link: https://github.com/damianospark/quiet-classes/issues/new
 
-# 4강 | 팀 협업 중심의 전략 기획 프로젝트 완성
+# 4모듈 | 디지털도구 기반 전략 실행 기술
 
 ## 오리엔테이션
 
@@ -16,9 +16,9 @@ Duration: 15
 
 #### 프로젝트 워크플로
 
-[![4강 워크플로 다이어그램](img/workflow-diagram.png)](https://excalidraw.com/#json=VcSeY8cVY4Gl_rMzRis4W,AyJABRs4Pw6mhMgRXxGwdg)
+[![4모듈 워크플로 다이어그램](img/workflow-diagram.png)](https://excalidraw.com/#json=VcSeY8cVY4Gl_rMzRis4W,AyJABRs4Pw6mhMgRXxGwdg)
 
-4강은 "협업과 전략 기획"을 완성하기 위한 프로젝트 기반 수업입니다. 좌측 사이드바 단계에 따라 이동하며 각 실습을 순차적으로 진행하세요.
+4모듈은 "협업과 전략 기획"을 완성하기 위한 프로젝트 기반 수업입니다. 좌측 사이드바 단계에 따라 이동하며 각 실습을 순차적으로 진행하세요.
 
 #### 🎯 학습 목표
 
@@ -98,7 +98,7 @@ Duration: 35
 2. 페이지 본문에 '/' 를 타이핑하고 `Database - Inline` 을 선택하자마자 오른쪽에 뜨는 컨텍스트 메뉴 아래 "Suggested" 영억에서 `More templates` 선택하여 template추천 팝업을 띄운다.
 3. template추천 팝업에서 `Projects` 를 선택해서 미리 세팅된 Project 테이블을 생성
 4. 위 2,3 단계와 유사한 방법으로 `Task Tracker`도 생성
-5. 4강에서 진행할 내용을 1개 프로젝트로 5강에서 진행할 내용을 또 다른 1개 프로젝트로 등록
+5. 4모듈에서 진행할 내용을 1개 프로젝트로 5모듈에서 진행할 내용을 또 다른 1개 프로젝트로 등록
 6. 프로젝트 보드와 태스크 보드를 편리하게 관리할 수 있는 모양으로 수정
 7. 프로젝트와 태스크 Relation 을 맺고 '완료율' 롤업과 '상태(Auto)' Formula 컬럼 만들어 프로젝트의 작업 상태 진행율과 상태 추적하기
 
