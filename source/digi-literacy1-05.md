@@ -192,16 +192,11 @@ Duration: 12
 <tr>
 <td width="50%">
 
-![](img/20251109_132111_image.png)
 
-</td>
-<td width="50%">
+![](img/20251109_132733_image.png)
 
-![](img/20251109_132506_image.png)
 
-</td>
-</tr>
-</table>
+![](img/20251109_132756_image.png)
 
 ## LLM으로 소개문 초안 작성
 
