@@ -207,7 +207,7 @@
     
       <google-codelab-step label="포트폴리오 섹션 구성" duration="18">
         <ol type="1">
-<li>✅ Canva 상단 <code>파일 → 새로운 디자인 만들기</code>를 선택한 후 <code>A4 문서</code>를 클릭해 포트폴리오 페이지를 생성한다.</li>
+<li>✅ Canva 상단 <code>파일 → 새로운 디자인 만들기</code>를 선택한 후 <code>A4 문서</code>를 클릭해 포트폴리오 페이지를 생성한다. (빈 페이지에 직접 작성해도 되고 시간을 절약하기 위해 템플릿을 선택해서 작성해도 됨. <code>Black And White odern Architect Resum</code> 나 <code>White Pink Professional Resume CV</code> 추천)</li>
 <li>✅ <code>페이지 추가</code>를 클릭해 총 1~2페이지를 구성한다. <ul>
 <li><strong>페이지 1</strong>: 인트로, 역량, 성과, 컨텍 포인트 를 넣고 불량이 많아지면 2페이지를 생성하여 배치한다.</li>
 <li><strong>인트로</strong>: 프로필 사진 + 소개</li>
@@ -240,7 +240,7 @@
 <li><code>버전 기록</code>에 <code>20250109_Layout</code> 명명</li>
 <li>Task Tracker에서 <code>포트폴리오 섹션 구성</code> 상태를 <code>완료</code>로 변경</li>
 </ul>
-<p>&lt;보완필요: Canva 4페이지 레이아웃 와이어프레임 캡처&gt;</p>
+<p class="image-container"><img src="img/dc628d3ac7922c09.png"></p>
 
 
       </google-codelab-step>
@@ -252,12 +252,14 @@
 <h2 is-upgraded>실습 절차</h2>
 <ol type="1">
 <li>✅ 로컬 컴퓨터에서 비정장 프로필 사진을 준비한다.</li>
-<li>✅ <a href="https://gemini.google.com/" target="_blank">Gemini Advanced</a>를 열고 <code>이미지 업로드</code>를 클릭해 사진을 업로드한다. <ul>
+<li>✅ <a href="https://gemini.google.com/" target="_blank">Gemini</a>를 열고 <code>이미지 업로드</code>를 클릭해 사진을 업로드한다. <ul>
 <li>Qwen Image Edit를 사용하려면 <a href="https://qwenlm.github.io/" target="_blank">Qwen 공식 사이트</a>에서 Image Edit 모델을 선택한다.</li>
 </ul>
 </li>
 <li>✅ 아래 프롬프트를 입력해 포트폴리오용 증명사진을 생성한다.</li>
 </ol>
+<pre><code>첨부한 인물이 정면을 바라보고 하얀 와이셔츠에 정장을 입고 있는  증명사진 형태로 수정해
+</code></pre>
 <pre><code>정장 없이 촬영한 이 사진을 취업 포트폴리오용으로 보정해줘.
 - 남색/진회색 재킷을 입힌 것처럼 보이게 하고
 - 자연스러운 단색 배경(밝은 회색)을 적용해줘.
@@ -266,6 +268,8 @@
 <ol type="1" start="4">
 <li>✅ 추가 개선이 필요하면 다음 후속 프롬프트를 사용한다.</li>
 </ol>
+<pre><code>첨부한 이미지의 인물이 밝은 초록색 계열의 젊은 감성의 넥타이를 맨 모습으로 수정해줘 
+</code></pre>
 <pre><code>턱선과 어깨선을 약간 또렷하게 강조하고, 피부 톤은 자연광에서 촬영한 것처럼 보정해줘.
 과도한 뷰티 필터 효과는 제거하고, 사진 전체 밝기는 10%만 올려줘.
 </code></pre>
@@ -280,7 +284,11 @@
 <li>Canva 페이지 1에 적용 완료</li>
 <li>Task Tracker에서 <code>프로필 사진 리터치</code> 상태를 <code>완료</code>로 변경</li>
 </ul>
-<p>&lt;보완필요: Gemini/Qwen 리터치 전후 비교 이미지&gt;</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img src="img/eb6e678e5339db81.png"></p>
+</td><td colspan="1" rowspan="1"><p class="image-container"><img src="img/3a34fc1497abf3a8.png"></p>
+</td></tr>
+</table>
 
 
       </google-codelab-step>
