@@ -85,6 +85,11 @@ Duration: 12
 4. ✅ 상단 `디자인 → 브랜드 키트`를 열고 `브랜드 색상`에 본인의 대표 색상 3개를 등록한다.
    - 예: 주색상(#2C3E50), 보조색상(#3498DB), 강조색상(#E74C3C)
 5. ✅ `브랜드 폰트`에서 `Pretendard`, `Noto Sans KR`, `Roboto` 중 하나를 선택한다.
+
+<aside class="warning">
+<strong>Pretendard 폰트 다운로드 방법</strong>: Canva에서 Pretendard를 찾을 수 없다면, <a href="https://github.com/orioncactus/pretendard/releases" target="_blank">Pretendard GitHub Releases</a>에서 최신 버전을 다운로드하세요. 압축 해제 후 <code>Pretendard-Regular.otf</code> 파일을 더블클릭해 시스템에 설치하면, Canva Pro 계정에서 <code>업로드 → 폰트 업로드</code>로 사용할 수 있습니다. 무료 계정은 시스템 폰트 중 <code>Noto Sans KR</code>을 대체 사용하세요.
+</aside>
+
 6. ✅ 캔버스 상단 `파일 → 보기 → 페이지 가이드 표시`로 그리드·안전 영역을 활성화한다.
 7. ✅ `파일 → 버전 기록 → 현재 버전 이름 지정`을 클릭하고 `20250109_Base`로 저장한다.
 
