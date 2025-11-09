@@ -10,7 +10,7 @@ Feedback Link: https://github.com/damianospark/quiet-classes/issues/new
 
 ## 오리엔테이션
 
-Duration: 10
+Duration: 15
 
 ### 개요
 
@@ -48,7 +48,7 @@ Duration: 10
 
 ## 환경 준비 및 브라우저 구성
 
-Duration: 5
+Duration: 10
 
 한 명이 세 개의 창을 사용해 역할을 분담합니다. 기본 Chrome 창은 팀장 역할, 시크릿 창 1은 A 담당자, 시크릿 창 2는 B 담당자 전용으로 두고 각 창에서 문서를 작성합니다.
 
@@ -91,7 +91,7 @@ Duration: 5
 
 ### 개요
 
-Duration: 12
+Duration: 28
 프로젝트를 한눈에 관리할 수 있도록 Notion 테이블 보드를 만든다. 행마다 마일스톤을 배치해 역할과 상태를 체계적으로 추적한다.
 
 1. Notion에서 새로 성성되어 있는 빈 페이지의 이름을 "프로젝트관리"로 저장한다.
@@ -221,7 +221,7 @@ A 담당자가 KPI를 정리하고 Google Sheets에서 시각화 대시보드를
 
 ## 전략 슬라이드 요약
 
-Duration: 12
+Duration: 15
 
 A 담당자가 Google Slides 한 장으로 전략 스토리를 시각화합니다.
 
@@ -239,7 +239,7 @@ A 담당자가 Google Slides 한 장으로 전략 스토리를 시각화합니�
 
 ## Notion 통합 & 회고
 
-Duration: 10
+Duration: 15
 
 모든 산출물을 Notion 프로젝트 페이지에 정확하게 연결하고 회고 로그를 정리합니다.
 
