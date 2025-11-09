@@ -82,7 +82,7 @@ git push origin main
 
 - **4모듈**: [팀 협업 중심 전략 기획](https://damianospark.github.io/quiet-classes/digi-literacy1-04/)
   - Notion·Google Workspace·ChatGPT 활용
-- **5모듈**: [AI 포트폴리오 시각화](https://damianospark.github.io/quiet-classes/digi-literacy1-05/)
+- **5모듈**: [통합 AI 리터러시(AI 활용 일반)](https://damianospark.github.io/quiet-classes/digi-literacy1-05/)
   - Canva·Gemini·ChatGPT 활용
 
 ### 4. 새 강의 추가 워크플로
