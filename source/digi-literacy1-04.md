@@ -3,7 +3,7 @@ id: digi-literacy1-04
 categories: digital-literacy
 tags: notion, google-workspace, chatgpt, collaboration
 status: Published
-authors: quiet-classes
+authors: 박진우
 Feedback Link: https://github.com/damianospark/quiet-classes/issues/new
 
 # 4모듈 | 디지털도구 기반 전략 실행 기술
@@ -18,7 +18,7 @@ Duration: 15
 
 [![4모듈 워크플로 다이어그램](img/workflow-diagram.png)](https://excalidraw.com/#json=VcSeY8cVY4Gl_rMzRis4W,AyJABRs4Pw6mhMgRXxGwdg)
 
-4모듈은 "협업과 전략 기획"을 완성하기 위한 프로젝트 기반 수업입니다. 좌측 사이드바 단계에 따라 이동하며 각 실습을 순차적으로 진행하세요.
+4모듈은 "디지털 업무 도구 활용 및 협업 실행력을 강화"하기 위한 실습 기반 수업입니다. 좌측 사이드바 단계에 따라 이동하며 각 실습을 순차적으로 진행하세요.
 
 #### 🎯 학습 목표
 
